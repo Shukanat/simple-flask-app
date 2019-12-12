@@ -1,0 +1,25 @@
+body {
+	background-image:url(maison.jpg);
+	background-repeat: repeat-x;
+	background-size: auto;
+}
+
+h1 {
+	font-weight: bold;
+	font-size: 10vw;
+	padding-left: 2%;
+	margin-bottom: 0%; /* Top  Right  Bottom  Left */
+}
+
+p
+{
+	font-weight: lighter;
+	padding-left: 2%;
+	padding-bottom: 1%;
+}
+
+form
+{
+	display: flex;
+	flex-direction: row;
+}

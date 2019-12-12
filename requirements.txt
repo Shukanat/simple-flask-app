@@ -1,0 +1,6 @@
+Flask
+flask-wtf
+pyodbc
+pandas
+seaborn
+matplotlib

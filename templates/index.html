@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Welcome to my app</title>
+        <script async defer src="https://buttons.github.io/buttons.js"></script>
+        <link rel="icon" href="data:,">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+    </head>
+    <body>
+        <div style="display: flex; flex-direction: row;">
+            <a href="/" style="margin-right: 1%">Home</a>
+            <a class="github-button" href="https://github.com/Shukanat/simple-flask-app" data-color-scheme="no-preference: dark; light: light; dark: dark;" aria-label="Watch Shukanat/simple-flask-app on GitHub"> Code</a>
+        </div>
+        <div style="margin: 10% 60% 30% 2%;">
+            <h1> Hello!</h1>
+            <p>Afin de connaître la part des femmes dans les meilleurs films selon IMDB veuillez cliquer <a href="/female_proportion"> >>> ici <<< </a> </p>
+            <form action="" method="post" novalidate>
+            {{ form.hidden_tag() }}
+                <p>Afficher les plus populaires genres de films pour l'année: {{ form.year(size=4) }} </p>
+                <p>{{ form.submit() }}</p>
+            </form>
+        </div>
+    </body>
+</html>
